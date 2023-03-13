@@ -19,6 +19,7 @@ PODS:
     - ReactCommon/turbomodule/core
   - ExpoSeon (0.1.0):
     - ExpoModulesCore
+    - SeonSDK (~> 4.0.0)
   - FBLazyVector (0.71.3)
   - FBReactNativeSpec (0.71.3):
     - RCT-Folly (= 2021.07.22.00)
@@ -284,6 +285,8 @@ PODS:
   - React-jsinspector (0.71.3)
   - React-logger (0.71.3):
     - glog
+  - react-native-get-random-values (1.8.0):
+    - React-Core
   - React-perflogger (0.71.3)
   - React-RCTActionSheet (0.71.3):
     - React-Core/RCTActionSheetHeaders (= 0.71.3)
@@ -368,6 +371,7 @@ PODS:
     - React-jsi (= 0.71.3)
     - React-logger (= 0.71.3)
     - React-perflogger (= 0.71.3)
+  - SeonSDK (4.0.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -401,6 +405,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -420,6 +425,7 @@ SPEC REPOS:
   trunk:
     - fmt
     - libevent
+    - SeonSDK
 
 EXTERNAL SOURCES:
   boost:
@@ -478,6 +484,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-get-random-values:
+    :path: "../node_modules/react-native-get-random-values"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -517,7 +525,7 @@ SPEC CHECKSUMS:
   Expo: 04ba1ddde0be07aff4306ae636a1804810679145
   ExpoKeepAwake: 69f5f627670d62318410392d03e0b5db0f85759a
   ExpoModulesCore: 1667335d4f4c9b7801990930e6f0eea42c916a21
-  ExpoSeon: ec5bd69bd8f27ecbfcc9561f350ba9c0b4e260ef
+  ExpoSeon: fe2f35dcf081d96f335a9a83d541c2203d90ec32
   FBLazyVector: 60195509584153283780abdac5569feffb8f08cc
   FBReactNativeSpec: 9c191fb58d06dc05ab5559a5505fc32139e9e4a2
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
@@ -538,6 +546,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 515b703d23ffadeac7687bc2d12fb08b90f0aaa1
   React-jsinspector: 9f7c9137605e72ca0343db4cea88006cb94856dd
   React-logger: 957e5dc96d9dbffc6e0f15e0ee4d2b42829ff207
+  react-native-get-random-values: a6ea6a8a65dc93e96e24a11105b1a9c8cfe1d72a
   React-perflogger: af8a3d31546077f42d729b949925cc4549f14def
   React-RCTActionSheet: 57cc5adfefbaaf0aae2cf7e10bccd746f2903673
   React-RCTAnimation: 11c61e94da700c4dc915cf134513764d87fc5e2b
@@ -551,6 +560,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 5199a180d04873366a83855de55ac33ce60fe4d5
   React-runtimeexecutor: 7bf0dafc7b727d93c8cb94eb00a9d3753c446c3e
   ReactCommon: 6f65ea5b7d84deb9e386f670dd11ce499ded7b40
+  SeonSDK: af0e0869f0f72fc11253a52f525970a3926697af
   Yoga: 5ed1699acbba8863755998a4245daa200ff3817b
 
 PODFILE CHECKSUM: f6c02ea28259dcbd649fe5f90d50f3be244e576a

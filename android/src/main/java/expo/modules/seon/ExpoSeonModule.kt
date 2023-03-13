@@ -13,34 +13,13 @@ class ExpoSeonModule : Module() {
     // The module will be accessible from `requireNativeModule('ExpoSeon')` in JavaScript.
     Name("ExpoSeon")
 
-    // Sets constant properties on the module. Can take a dictionary or a closure that returns a dictionary.
-    Constants(
-      "PI" to Math.PI
-    )
+    AsyncFunction("fingerprintBase64") { sessionId: String, promise: Promise ->
+      val sfp = SeonBuilder().withContext(applicationContext).withSessionId(sessionID).build()
 
-    // Defines event names that the module can send to JavaScript.
-    Events("onChange")
+      sfp.setLoggingEnabled(true)
 
-    // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
-    Function("hello") {
-      "Hello world! 👋"
-    }
-
-    // Defines a JavaScript function that always returns a Promise and whose native code
-    // is by default dispatched on the different thread than the JavaScript runtime runs on.
-    AsyncFunction("setValueAsync") { value: String ->
-      // Send an event to JavaScript.
-      sendEvent("onChange", mapOf(
-        "value" to value
-      ))
-    }
-
-    // Enables the module to be used as a native view. Definition components that are accepted as part of
-    // the view definition: Prop, Events.
-    View(ExpoSeonView::class) {
-      // Defines a setter for the `name` prop.
-      Prop("name") { view: ExpoSeonView, prop: String ->
-        println(prop)
+      sfp.getFingerprintBase64 { seonFingerprint: String? ->
+        promise.resolve(seonFingerprint)
       }
     }
   }
