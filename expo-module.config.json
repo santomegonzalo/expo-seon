@@ -1,9 +1,16 @@
 {
-  "platforms": ["ios", "android", "web"],
+  "platforms": [
+    "ios",
+    "android"
+  ],
   "ios": {
-    "modules": ["ExpoSeonModule"]
+    "modules": [
+      "ExpoSeonModule"
+    ]
   },
   "android": {
-    "modules": ["expo.modules.seon.ExpoSeonModule"]
+    "modules": [
+      "expo.modules.seon.ExpoSeonModule"
+    ]
   }
 }
