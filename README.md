@@ -11,6 +11,16 @@ Expo module to talk with Seon
 
 ## How to use it?
 
+```
+npm install expo-seon
+```
+or
+```
+yarn add expo-seon
+```
+
+Once it is installed just import the new module and starting using it.
+
 ```typescript
 import * as ExpoSeon from 'expo-seon';
 ```
@@ -20,8 +30,13 @@ const seonSessionId = uuidv4(); // if needed
 const fingerprintBase64 = await ExpoSeon.fingerprintBase64(seonSessionId);
 ```
 
-## How to test it?
+---
+- Because this is a native module, it will not work with Expo Go. Only works with EAS Builds. 
+- Once installed, create a new development build, otherwise, will fail.
 
+## Wanna help?
+
+- Open a new PR
 - `npm run build` => on another Terminal
 - `cd example && npx expo run:ios`
 
