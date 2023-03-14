@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/expo-seon.svg)](https://badge.fury.io/js/expo-seon)
+
 # expo-seon
 
 Expo module to talk with Seon
